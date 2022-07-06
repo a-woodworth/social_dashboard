@@ -1,0 +1,58 @@
+:root {
+  --bg-main: $light-bg-main;
+  --bg-inner: $light-bg-inner;
+  --bg-card: $light-bg-card;
+  --text-primary: $light-text-primary;
+  --text-secondary: $light-text-secondary;
+}
+
+.dark-theme {
+  --bg-main: $dark-bg-main;
+  --bg-inner: $dark-bg-inner;
+  --bg-card: $dark-bg-card;
+  --text-primary: $dark-text-primary;
+  --text-secondary: $dark-text-secondary;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: var(--bg-main);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+/*# sourceMappingURL=styles.css.map */
