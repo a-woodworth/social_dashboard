@@ -1,17 +1,4 @@
 :root {
-  --bg-main: hsl(0, 0%, 100%);
-  --bg-inner: hsl(225, 100%, 98%);
-  --bg-card: hsl(227, 47%, 96%);
-  --text-primary: hsl(230, 17%, 14%);
-  --text-secondary: hsl(228, 12%, 44%);
-  --accent-color: hsl(229, 19%, 59%);
-  --bg-toggle: hsl(230, 22%, 74%);
-  --circle-toggle: hsl(227, 47%, 96%);
-  --toggle-focus: linear-gradient(225deg, hsl(146, 68%, 55%) 0%, hsl(210, 78%, 56%) 98.02%);
-  --text-focus: hsl(229, 19%, 59%);
-}
-
-.dark-theme {
   --bg-main: hsl(230, 17%, 14%);
   --bg-inner: hsl(232, 19%, 15%);
   --bg-card: hsl(228, 28%, 20%);
@@ -22,6 +9,19 @@
   --circle-toggle: hsl(228, 25%, 27%);
   --toggle-focus: linear-gradient(225deg, hsl(146, 68%, 55%) 0%, hsl(210, 78%, 56%) 98.02%);
   --text-focus: hsl(0, 0%, 100%);
+}
+
+.light-theme {
+  --bg-main: hsl(0, 0%, 100%);
+  --bg-inner: hsl(225, 100%, 98%);
+  --bg-card: hsl(227, 47%, 96%);
+  --text-primary: hsl(230, 17%, 14%);
+  --text-secondary: hsl(228, 12%, 44%);
+  --accent-color: hsl(229, 19%, 59%);
+  --bg-toggle: hsl(230, 22%, 74%);
+  --circle-toggle: hsl(227, 47%, 96%);
+  --toggle-focus: linear-gradient(225deg, hsl(146, 68%, 55%) 0%, hsl(210, 78%, 56%) 98.02%);
+  --text-focus: hsl(229, 19%, 59%);
 }
 
 html {
@@ -149,6 +149,7 @@ label input[role=switch] ~ .state > .toggle-wrap {
 }
 label input[role=switch] ~ .state > .toggle-wrap:hover {
   background: var(--toggle-focus);
+  filter: contrast(150%);
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color;
 }

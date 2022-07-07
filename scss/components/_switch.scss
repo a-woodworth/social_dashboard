@@ -33,6 +33,7 @@ label input[role="switch"] ~ .state > .toggle-wrap {
 
   &:hover {
     background: var(--toggle-focus);
+    filter: contrast(150%);
     outline: auto 2px Highlight; // for non-webkit browsers
     outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
   }
@@ -49,7 +50,7 @@ label input[role="switch"] ~ .state > .toggle-wrap > .position {
   background: var(--bg-card);
 
   &:hover {
-    background: var(--circle-toggle)
+    background: var(--circle-toggle);
   }
 }
 
