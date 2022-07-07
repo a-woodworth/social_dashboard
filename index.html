@@ -20,12 +20,20 @@
           <h1>Social Media Dashboard</h1>
           <h2>Total Followers: 23,004</h2>
         </div>
-        <label>
-          <span class="label">Dark Mode</span>
-          <input type="checkbox" class="label__input">
-          <!-- Circle -->
-          <span class="label__circle"></span>
-        </label>
+        <fieldset>
+          <legend class="hidden">Toggle Switch</legend>
+          <label for="id-switch">
+            <span class="label">Dark Mode</span>
+            <input id="id-switch"
+                   type="checkbox"
+                   role="switch">
+            <span class="state">
+              <span class="toggle-wrap">
+                <span class="position"></span>
+              </span>
+            </span>
+          </label>
+        </fieldset>
       </div>
     </header>
     <main class="container">

@@ -11,6 +11,11 @@
   --bg-card: #{$light-bg-card};
   --text-primary: #{$light-text-primary};
   --text-secondary: #{$light-text-secondary};
+  --accent-color: #{$light-accent-color};
+  --bg-toggle: #{$light-toggle};
+  --circle-toggle: #{$light-bg-card};
+  --toggle-focus: #{$dark-toggle};
+  --text-focus: #{$light-accent-color};
 }
 
 .dark-theme {
@@ -19,6 +24,11 @@
   --bg-card: #{$dark-bg-card};
   --text-primary: #{$dark-text-primary};
   --text-secondary: #{$dark-text-secondary};
+  --accent-color: #{$dark-accent-color};
+  --bg-toggle: #{$dark-toggle};
+  --circle-toggle: #{$dark-accent-color};
+  --toggle-focus: #{$dark-toggle};
+  --text-focus: #{$light-bg-main};
 }
 
 html {
@@ -37,9 +47,18 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+fieldset {
   margin: 0;
   padding: 0;
+}
+
+fieldset {
+  border: none;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: pxToRem(84px);
+  width: 100%;
 }
 
 body {
@@ -59,11 +78,14 @@ p {
 h1 {
   @include text($text-M, $font-weight--bold);
   color: var(--text-primary);
+  padding-top: 2.25rem;
+  margin-bottom: 4px;
 }
 
 h2 {
   @include text($text-S, $font-weight--bold);
   color: var(--text-secondary);
+  margin-bottom: 1.5rem;
 }
 
 h3 {

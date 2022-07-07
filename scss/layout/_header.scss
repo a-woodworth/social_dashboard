@@ -10,3 +10,9 @@ header {
   border-radius: 0px 0px 20px 20px;
   width: 100%;
 }
+
+.heading {
+  border-color: var(--accent-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
