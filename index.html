@@ -15,21 +15,22 @@
 
   <body>
     <header>
-      <div class="main-header">
+      <div class="main-header container">
         <div class="heading">
           <h1>Social Media Dashboard</h1>
           <h2>Total Followers: 23,004</h2>
         </div>
-        <label class="label">Dark Mode
+        <label>
+          <span class="label">Dark Mode</span>
           <input type="checkbox" class="label__input">
           <!-- Circle -->
           <span class="label__circle"></span>
         </label>
       </div>
     </header>
-    <main>
-      <ul class="socialmedia">
-        <li class="socialmedia__item">
+    <main class="container">
+      <div class="socialmedia">
+        <article class="socialmedia__card">
           <a class="socialmedia__user-link" href="#" target="_blank">
             <img class="socialmedia__icon" src="images/icon-facebook.svg" alt="Facebook">
             <span class="socialmedia__user-id">@nathanf</span>
@@ -42,8 +43,8 @@
             <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
             <span>12 Today</span>
           </p>
-        </li>
-        <li class="socialmedia__item">
+        </article>
+        <article class="socialmedia__card">
           <a class="socialmedia__user-link" href="#" target="_blank">
             <img class="socialmedia__icon" src="images/icon-twitter.svg" alt="Twitter">
             <span class="socialmedia__user-id">@nathanf</span>
@@ -56,8 +57,8 @@
             <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
             <span>99 Today</span>
           </p>
-        </li>
-        <li class="socialmedia__item">
+        </article>
+        <article class="socialmedia__card">
           <a class="socialmedia__user-link" href="#" target="_blank">
             <img class="socialmedia__icon" src="images/icon-instagram.svg" alt="Instagram">
             <span class="socialmedia__user-id">@realnathanf</span>
@@ -70,8 +71,8 @@
             <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
             <span>1099 Today</span>
           </p>
-        </li>
-        <li class="socialmedia__item">
+        </article>
+        <article class="socialmedia__card">
           <a class="socialmedia__user-link" href="" target="_blank">
             <img class="socialmedia__icon" src="images/icon-youtube.svg" alt="YouTube">
             <span class="socialmedia__user-id">Nathan F.</span>
@@ -84,11 +85,11 @@
             <span class="arrow"><img src="images/icon-down.svg" alt="Down"></span>
             <span>144 Today</span>
           </p>
-        </li>
-      </ul>
+        </article>
+      </div>
       <h4>Overview - Today</h4>
-      <ul class="stats">
-        <li class="stats__item">
+      <div class="stats">
+        <article class="stats__card">
           <img class="stats__icon" src="images/icon-facebook.svg" alt="Facebook">
           <h5 class="stats__total">
             <span>Page Views</span>
@@ -98,8 +99,8 @@
             <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
             <span>3%</span>
           </p>
-        </li>
-        <li class="stats__item">
+        </article>
+        <article class="stats__card">
           <img class="stats__icon" src="images/icon-facebook.svg" alt="Facebook">
           <h5 class="stats__total">
             <span>Likes</span>
@@ -109,8 +110,8 @@
             <span class="arrow"><img src="images/icon-down.svg" alt="Down"></span>
             <span>2%</span>
           </p>
-        </li>
-        <li class="stats__item">
+        </article>
+        <article class="stats__card">
           <img class="stats__icon" src="images/icon-instagram.svg" alt="Instagram">
           <h5 class="stats__total">
             <span>Likes</span>
@@ -120,8 +121,8 @@
             <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
             <span>2257%</span>
           </p>
-        </li>
-        <li class="stats__item">
+        </article>
+        <article class="stats__card">
           <img class="stats__icon" src="images/icon-instagram.svg" alt="Instagram">
           <h5 class="stats__total">
             <span>Profile Views</span>
@@ -131,8 +132,8 @@
             <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
             <span>1375%</span>
           </p>
-        </li>
-        <li class="stats__item">
+        </article>
+        <article class="stats__card">
           <img class="stats__icon" src="images/icon-twitter.svg" alt="Twitter">
           <h5 class="stats__total">
             <span>Retweets</span>
@@ -142,8 +143,8 @@
             <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
             <span>303%</span>
           </p>
-        </li>
-        <li class="stats__item">
+        </article>
+        <article class="stats__card">
           <img class="stats__icon" src="images/icon-twitter.svg" alt="Twitter">
           <h5 class="stats__total">
             <span>Likes</span>
@@ -153,8 +154,8 @@
             <span class="arrow"><img src="images/icon-up.svg" alt="Up"></span>
             <span>553%</span>
           </p>
-        </li>
-        <li class="stats__item">
+        </article>
+        <article class="stats__card">
           <img class="stats__icon" src="images/icon-youtube.svg" alt="YouTube">
           <h5 class="stats__total">
             <span>Likes</span>
@@ -164,8 +165,8 @@
             <span class="arrow"><img src="images/icon-down.svg" alt="Down"></span>
             <span>19%</span>
           </p>
-        </li>
-        <li class="stats__item">
+        </article>
+        <article class="stats__card">
           <img class="stats__icon" src="images/icon-youtube.svg" alt="YouTube">
           <h5 class="stats__total">
             <span>Total Views</span>
@@ -175,11 +176,11 @@
             <span class="arrow"><img src="images/icon-down.svg" alt="Down"></span>
             <span>12%</span>
           </p>
-        </li>
-      </ul>
+        </article>
+      </div>
     </main>
     <footer>
-      <div class="main-footer">
+      <div class="main-footer container">
         <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/a-woodworth" target="_blank">a-woodworth</a>.</p>
       </div>
     </footer>

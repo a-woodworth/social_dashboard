@@ -2,6 +2,8 @@
 // Global Config
 // ___________________________________________________________________
 
+@use '../utilities/mixins' as *;
+
 //Font Stack
 $font-family--primary: 'Inter', sans-serif;
 
@@ -21,19 +23,28 @@ $youtube: #{'hsl(348, 97%, 39%)'};
 $dark-bg-main: #{'hsl(230, 17%, 14%)'};
 $dark-bg-inner: #{'hsl(232, 19%, 15%)'};
 $dark-bg-card: #{'hsl(228, 28%, 20%)'};
-$dark-text-primary: #{'hsl(228, 34%, 66%)'};
-$dark-text-secondary: #{'hsl(0, 0%, 100%)'};
+$dark-text-primary: #{'hsl(0, 0%, 100%)'};
+$dark-text-secondary: #{'hsl(228, 34%, 66%)'};
 
 // Light Theme
 $light-bg-main: #{'hsl(0, 0%, 100%)'};
 $light-bg-inner: #{'hsl(225, 100%, 98%)'};
 $light-bg-card: #{'hsl(227, 47%, 96%)'};
-$light-text-primary: #{'hsl(228, 12%, 44%)'};
-$light-text-secondary: #{'hsl(230, 17%, 14%)'};
+$light-text-primary: #{'hsl(230, 17%, 14%)'};
+$light-text-secondary: #{'hsl(228, 12%, 44%)'};
 
 // Text
+$text-jumbo: pxToRem(56px);
+$text-XXL: pxToRem(48px);
+$text-XL: pxToRem(32px);
+$text-L: pxToRem(28px);
+$text-M: pxToRem(24px);
+$text-S: pxToRem(14px);
+$text-XS: pxToRem(12px);
 
 // Line Height
+$line-height__L: 0.8;
+$line-height__default: 1.2;
 
 // Breakpoints
 $brkpoint-lg: '(min-width: 90rem)';

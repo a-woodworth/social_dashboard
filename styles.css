@@ -1,17 +1,17 @@
 :root {
-  --bg-main: $light-bg-main;
-  --bg-inner: $light-bg-inner;
-  --bg-card: $light-bg-card;
-  --text-primary: $light-text-primary;
-  --text-secondary: $light-text-secondary;
+  --bg-main: hsl(0, 0%, 100%);
+  --bg-inner: hsl(225, 100%, 98%);
+  --bg-card: hsl(227, 47%, 96%);
+  --text-primary: hsl(230, 17%, 14%);
+  --text-secondary: hsl(228, 12%, 44%);
 }
 
 .dark-theme {
-  --bg-main: $dark-bg-main;
-  --bg-inner: $dark-bg-inner;
-  --bg-card: $dark-bg-card;
-  --text-primary: $dark-text-primary;
-  --text-secondary: $dark-text-secondary;
+  --bg-main: hsl(230, 17%, 14%);
+  --bg-inner: hsl(232, 19%, 15%);
+  --bg-card: hsl(228, 28%, 20%);
+  --text-primary: hsl(0, 0%, 100%);
+  --text-secondary: hsl(228, 34%, 66%);
 }
 
 html {
@@ -30,15 +30,9 @@ h2,
 h3,
 h4,
 h5,
-p,
-ul,
-li {
+p {
   margin: 0;
   padding: 0;
-}
-
-ul {
-  list-style-type: none;
 }
 
 body {
@@ -47,12 +41,81 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2,
+h4,
+h5,
+p {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+h3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -2px;
+  line-height: 0.8;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+h5 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
 a {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  cursor: pointer;
   text-decoration: none;
 }
 a:focus {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding-inline: 1.5rem;
+}
+
+header {
+  background-color: var(--bg-inner);
+  border-radius: 0px 0px 20px 20px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

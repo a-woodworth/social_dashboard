@@ -2,6 +2,12 @@
 // Mixins
 // ___________________________________________________________________
 
+@use 'sass:math';
+
+@function pxToRem($pxValue) {
+  @return math.div($pxValue, 16px) * 1rem;
+}
+
 // Size
 @mixin size($width, $height: $width) {
   width: $width;

@@ -6,19 +6,19 @@
 @use '../utilities/mixins' as *;
 
 :root {
-  --bg-main: $light-bg-main;
-  --bg-inner: $light-bg-inner;
-  --bg-card: $light-bg-card;
-  --text-primary: $light-text-primary;
-  --text-secondary: $light-text-secondary;
+  --bg-main: #{$light-bg-main};
+  --bg-inner: #{$light-bg-inner};
+  --bg-card: #{$light-bg-card};
+  --text-primary: #{$light-text-primary};
+  --text-secondary: #{$light-text-secondary};
 }
 
 .dark-theme {
-  --bg-main: $dark-bg-main;
-  --bg-inner: $dark-bg-inner;
-  --bg-card: $dark-bg-card;
-  --text-primary: $dark-text-primary;
-  --text-secondary: $dark-text-secondary;
+  --bg-main: #{$dark-bg-main};
+  --bg-inner: #{$dark-bg-inner};
+  --bg-card: #{$dark-bg-card};
+  --text-primary: #{$dark-text-primary};
+  --text-secondary: #{$dark-text-secondary};
 }
 
 html {
@@ -37,15 +37,9 @@ h2,
 h3,
 h4,
 h5,
-p,
-ul,
-li {
+p {
   margin: 0;
   padding: 0;
-}
-
-ul {
-  list-style-type: none;
 }
 
 body {
@@ -54,7 +48,50 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2,
+h4,
+h5,
+p {
+  line-height: $line-height__default;
+}
+
+h1 {
+  @include text($text-M, $font-weight--bold);
+  color: var(--text-primary);
+}
+
+h2 {
+  @include text($text-S, $font-weight--bold);
+  color: var(--text-secondary);
+}
+
+h3 {
+  @include text($text-jumbo, $font-weight--bold);
+  color: var(--text-primary);
+  letter-spacing: -2px;
+  line-height: $line-height__L;
+}
+
+h4 {
+  @include text($text-M, $font-weight--bold);
+  color: var(--text-secondary);
+}
+
+h5 {
+  @include text($text-S, $font-weight--bold);
+  color: var(--text-secondary);
+}
+
+p {
+  @include text($text-XS, $font-weight--bold);
+  color: var(--text-secondary);
+}
+
 a {
+  @include text($text-XS, $font-weight--bold);
+  color: var(--text-secondary);
+  cursor: pointer;
   text-decoration: none;
 
   &:focus {

@@ -1,13 +1,11 @@
 // ___________________________________________________________________
-// Containers
+// Switch Styles
 // ___________________________________________________________________
 
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  padding-inline: pxToRem(24px);
+.label {
+  @include text($text-XS, $font-weight--bold);
+  color: var(--text-primary);
 }
