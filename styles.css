@@ -83,14 +83,6 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-h3 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  letter-spacing: -2px;
-  line-height: 0.8;
-}
-
 h4 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -119,6 +111,99 @@ a {
 a:focus {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color;
+}
+
+.socialmedia__card {
+  background-color: var(--bg-card);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.socialmedia__card::before {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.socialmedia__card.facebook::before {
+  background-color: hsl(208, 92%, 53%);
+}
+
+.socialmedia__card.twitter::before {
+  background-color: hsl(203, 89%, 53%);
+}
+
+.socialmedia__card.instagram::before {
+  background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.socialmedia__card.youtube::before {
+  background-color: hsl(348, 97%, 39%);
+}
+
+.socialmedia__user-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.socialmedia__user-link img {
+  margin-right: 0.5rem;
+}
+
+.socialmedia__total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5625rem;
+  text-align: center;
+}
+
+.socialmedia__total span:first-child {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin-bottom: 0.5625rem;
+}
+
+.socialmedia__total span:last-child {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  letter-spacing: 5px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.arrow img {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.socialmedia__metrics {
+  padding-bottom: 1.5rem;
+}
+
+.positive {
+  color: hsl(163, 72%, 41%);
+}
+
+.negative {
+  color: hsl(356, 69%, 56%);
 }
 
 .switch-container {
@@ -197,6 +282,10 @@ header {
   border-color: var(--accent-color);
   border-bottom-style: solid;
   border-bottom-width: 1px;
+}
+
+.socialmedia {
+  margin-top: -2.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

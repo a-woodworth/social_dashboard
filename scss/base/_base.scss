@@ -88,13 +88,6 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
-h3 {
-  @include text($text-jumbo, $font-weight--bold);
-  color: var(--text-primary);
-  letter-spacing: -2px;
-  line-height: $line-height__L;
-}
-
 h4 {
   @include text($text-M, $font-weight--bold);
   color: var(--text-secondary);
