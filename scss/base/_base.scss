@@ -9,8 +9,10 @@
   --bg-main: #{$dark-bg-main};
   --bg-inner: #{$dark-bg-inner};
   --bg-card: #{$dark-bg-card};
+  --bg-card-hover: #{$dark-accent-color};
   --text-primary: #{$dark-text-primary};
   --text-secondary: #{$dark-text-secondary};
+  --text-overview: #{$dark-text-primary};
   --accent-color: #{$dark-accent-color};
   --bg-toggle: #{$dark-toggle};
   --circle-toggle: #{$dark-accent-color};
@@ -22,8 +24,10 @@
   --bg-main: #{$light-bg-main};
   --bg-inner: #{$light-bg-inner};
   --bg-card: #{$light-bg-card};
+  --bg-card-hover: #{$light-bg-card-hover};
   --text-primary: #{$light-text-primary};
   --text-secondary: #{$light-text-secondary};
+  --text-overview: #{$light-text-secondary};
   --accent-color: #{$light-accent-color};
   --bg-toggle: #{$light-toggle};
   --circle-toggle: #{$light-bg-card};
@@ -90,7 +94,7 @@ h2 {
 
 h4 {
   @include text($text-M, $font-weight--bold);
-  color: var(--text-secondary);
+  color: var(--text-overview);
 }
 
 h5 {

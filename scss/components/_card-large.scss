@@ -15,6 +15,11 @@
  margin-bottom: 1.5rem;
  padding-top: 2rem;
  position: relative;
+
+ &:hover {
+  background-color: var(--bg-card-hover);
+  cursor: pointer;
+ }
 }
 
 .socialmedia__card::before {
