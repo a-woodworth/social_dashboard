@@ -17,7 +17,7 @@
   --bg-toggle: #{$dark-toggle};
   --circle-toggle: #{$dark-accent-color};
   --toggle-focus: #{$dark-toggle};
-  --text-focus: #{$light-bg-main};
+  --text-focus: #{$dark-text-primary};
 }
 
 .light-theme {
@@ -31,7 +31,6 @@
   --accent-color: #{$light-accent-color};
   --bg-toggle: #{$light-toggle};
   --circle-toggle: #{$light-bg-card};
-  --toggle-focus: #{$dark-toggle};
   --text-focus: #{$light-accent-color};
 }
 

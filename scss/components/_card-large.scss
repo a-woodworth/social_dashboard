@@ -20,9 +20,8 @@
   background-color: var(--bg-card-hover);
   cursor: pointer;
  }
-}
 
-.socialmedia__card::before {
+ &::before {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   content: '';
@@ -30,6 +29,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+ }
 }
 
 .socialmedia__card.facebook::before {
@@ -53,10 +53,10 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 1.75rem;
-}
 
-.socialmedia__user-link img {
-  margin-right: 0.5rem;
+  img {
+    margin-right: 0.5rem;
+  }
 }
 
 .socialmedia__total {
@@ -66,22 +66,22 @@
   align-items: center;
   margin-bottom: 1.5625rem;
   text-align: center;
-}
 
-.socialmedia__total span:first-child {
-  @include text($text-jumbo, $font-weight--bold);
-  color: var(--text-primary);
-  letter-spacing: -2px;
-  line-height: $line-height__L;
-  margin-bottom: 0.5625rem;
-}
+  span:first-child {
+    @include text($text-jumbo, $font-weight--bold);
+    color: var(--text-primary);
+    letter-spacing: -2px;
+    line-height: $line-height__L;
+    margin-bottom: 0.5625rem;
+  }
 
-.socialmedia__total span:last-child {
-  @include text($text-XS, $font-weight--regular);
-  color: var(--text-secondary);
-  letter-spacing: 5px;
-  line-height: $line-height__default;
-  text-transform: uppercase;
+  span:last-child {
+    @include text($text-XS, $font-weight--regular);
+    color: var(--text-secondary);
+    letter-spacing: 5px;
+    line-height: $line-height__default;
+    text-transform: uppercase;
+  }
 }
 
 .arrow img {

@@ -24,10 +24,10 @@
   &:hover {
     cursor: pointer;
   }
-}
 
-.switch-container:hover label {
-  color: var(--text-focus);
+  &:hover label {
+    color: var(--text-focus);
+  }
 }
 
 .switch__btn {
@@ -64,4 +64,8 @@
 .switch__btn[aria-pressed="true"] .switch__circle {
   left: 27px;
   transition: all 0.25s ease;
+}
+
+.light-mode-on {
+  left: 27px;
 }
