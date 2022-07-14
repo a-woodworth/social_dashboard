@@ -124,6 +124,7 @@ a:focus {
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
+  min-width: 20.375rem;
   padding-top: 2rem;
   position: relative;
 }
@@ -139,6 +140,11 @@ a:focus {
   position: absolute;
   top: 0;
   width: 100%;
+}
+@media (min-width: 37.5rem) {
+  .socialmedia__card {
+    min-width: 15.9375rem;
+  }
 }
 
 .socialmedia__card.facebook::before {
@@ -337,6 +343,16 @@ header {
 .socialmedia {
   margin-top: -2.5rem;
 }
+@media (min-width: 37.5rem) {
+  .socialmedia {
+    display: grid;
+    grid-gap: 1.875rem;
+    grid-template-columns: repeat(auto-fit, 255px);
+    grid-template-rows: auto;
+    justify-content: center;
+    width: 100%;
+  }
+}
 
 .stats {
   margin-bottom: 1.875rem;
@@ -344,6 +360,22 @@ header {
 .stats h4 {
   padding-top: 1.375rem;
   margin-bottom: 1.75rem;
+}
+@media (min-width: 37.5rem) {
+  .stats h4 {
+    grid-column: 1/-1;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 37.5rem) {
+  .stats {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, 255px);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
 }
 
 .attribution {
