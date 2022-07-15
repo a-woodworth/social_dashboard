@@ -15,4 +15,20 @@ header {
   border-color: var(--accent-color);
   border-bottom-style: solid;
   border-bottom-width: 1px;
+
+  @media #{$brkpoint-md} {
+    border: none;
+  }
+}
+
+.main-header {
+  @media #{$brkpoint-md} {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 69.375rem;
+    padding-bottom: 9.625rem;
+    padding-top: 2.25rem;
+  }
 }

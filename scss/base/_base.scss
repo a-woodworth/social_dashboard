@@ -81,14 +81,24 @@ p {
 h1 {
   @include text($text-M, $font-weight--bold);
   color: var(--text-primary);
-  padding-top: 2.25rem;
   margin-bottom: 4px;
+  padding-top: 2.25rem;
+
+  @media #{$brkpoint-md} {
+    @include text($text-L);
+    margin-bottom: 3px;
+    padding-top: 0;
+  }
 }
 
 h2 {
   @include text($text-S, $font-weight--bold);
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
+
+  @media #{$brkpoint-md} {
+    margin-bottom: 0;
+  }
 }
 
 h4 {

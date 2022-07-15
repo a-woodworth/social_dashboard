@@ -15,6 +15,7 @@
     grid-template-columns: repeat(auto-fit, 255px);
     grid-template-rows: auto;
     justify-content: center;
+    margin-top: -6.75rem;
     width: 100%;
   }
 }
@@ -39,5 +40,10 @@
     justify-content: center;
     column-gap: 30px;
     row-gap: 30px;
+  }
+
+  @media #{$brkpoint-lg} {
+    max-width: 69.375rem;
+    margin-inline: auto;
   }
 }

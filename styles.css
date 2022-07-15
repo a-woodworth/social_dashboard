@@ -75,8 +75,15 @@ h1 {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
-  padding-top: 2.25rem;
   margin-bottom: 4px;
+  padding-top: 2.25rem;
+}
+@media (min-width: 37.5rem) {
+  h1 {
+    font-size: 1.75rem;
+    margin-bottom: 3px;
+    padding-top: 0;
+  }
 }
 
 h2 {
@@ -84,6 +91,11 @@ h2 {
   font-weight: 700;
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
+}
+@media (min-width: 37.5rem) {
+  h2 {
+    margin-bottom: 0;
+  }
 }
 
 h4 {
@@ -228,6 +240,11 @@ a:focus {
   background-color: var(--bg-card-hover);
   cursor: pointer;
 }
+@media (min-width: 37.5rem) {
+  .stats__card {
+    margin-bottom: 0;
+  }
+}
 
 .stats__icon {
   grid-column: 2;
@@ -267,7 +284,7 @@ a:focus {
   padding-top: 1rem;
 }
 .switch-container label {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 700;
   color: var(--text-secondary);
   user-select: none;
@@ -275,11 +292,22 @@ a:focus {
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 37.5rem) {
+  .switch-container label {
+    margin-right: 0.75rem;
+  }
+}
 .switch-container:hover {
   cursor: pointer;
 }
 .switch-container:hover label {
   color: var(--text-focus);
+}
+@media (min-width: 37.5rem) {
+  .switch-container {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 .switch__btn {
@@ -327,6 +355,11 @@ a:focus {
   grid-template-rows: auto;
   padding-inline: 1.5rem;
 }
+@media (min-width: 69.375rem) {
+  .container {
+    padding-inline: 0;
+  }
+}
 
 header {
   background-color: var(--bg-inner);
@@ -339,6 +372,23 @@ header {
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
+@media (min-width: 37.5rem) {
+  .heading {
+    border: none;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 69.375rem;
+    padding-bottom: 9.625rem;
+    padding-top: 2.25rem;
+  }
+}
 
 .socialmedia {
   margin-top: -2.5rem;
@@ -350,6 +400,7 @@ header {
     grid-template-columns: repeat(auto-fit, 255px);
     grid-template-rows: auto;
     justify-content: center;
+    margin-top: -6.75rem;
     width: 100%;
   }
 }
@@ -375,6 +426,12 @@ header {
     justify-content: center;
     column-gap: 30px;
     row-gap: 30px;
+  }
+}
+@media (min-width: 69.375rem) {
+  .stats {
+    max-width: 69.375rem;
+    margin-inline: auto;
   }
 }
 
