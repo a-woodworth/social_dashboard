@@ -43,24 +43,16 @@ h2,
 h3,
 h4,
 h5,
-p,
-fieldset {
+p {
   margin: 0;
   padding: 0;
-}
-
-fieldset {
-  border: none;
-  display: block;
-  padding-top: 1rem;
-  padding-bottom: 5.25rem;
-  width: 100%;
 }
 
 body {
   background-color: var(--bg-main);
   font-family: "Inter", sans-serif;
   min-height: 100vh;
+  transition: background 0.5s ease-out;
 }
 
 h1,
@@ -283,7 +275,7 @@ a:focus {
   margin-bottom: 5.25rem;
   padding-top: 1rem;
 }
-.switch-container label {
+.switch-container span {
   font-size: 0.875rem;
   font-weight: 700;
   color: var(--text-secondary);
@@ -293,14 +285,14 @@ a:focus {
   align-items: center;
 }
 @media (min-width: 37.5rem) {
-  .switch-container label {
+  .switch-container span {
     margin-right: 0.75rem;
   }
 }
 .switch-container:hover {
   cursor: pointer;
 }
-.switch-container:hover label {
+.switch-container:hover span {
   color: var(--text-focus);
 }
 @media (min-width: 37.5rem) {
@@ -340,8 +332,8 @@ a:focus {
   background: var(--circle-toggle);
 }
 
-.switch__btn[aria-pressed=true] .switch__circle {
-  left: 27px;
+.switch__btn[aria-pressed=true] .switch__circle,
+.switch__btn[aria-pressed=false] .switch__circle {
   transition: all 0.25s ease;
 }
 
