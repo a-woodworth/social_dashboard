@@ -18,6 +18,8 @@
   --circle-toggle: #{$dark-accent-color};
   --toggle-focus: #{$dark-toggle};
   --text-focus: #{$dark-text-primary};
+  --positive: #{$lime-green};
+  --negative: #{$bright-red-dark};
 }
 
 .light-theme {
@@ -32,6 +34,8 @@
   --bg-toggle: #{$light-toggle};
   --circle-toggle: #{$light-bg-card};
   --text-focus: #{$light-accent-color};
+  --positive: #{$lime-green-light};
+  --negative: #{$bright-red-light};
 }
 
 html {

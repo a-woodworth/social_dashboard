@@ -98,9 +98,9 @@
 }
 
 .positive {
-  color: $lime-green;
+  color: var(--positive);
 }
 
 .negative {
-  color: $bright-red;
+  color: var(--negative);
 }
