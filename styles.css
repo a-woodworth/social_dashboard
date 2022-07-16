@@ -127,7 +127,6 @@ a:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1.5rem;
   min-width: 20.375rem;
   padding-top: 2rem;
   position: relative;
@@ -382,18 +381,30 @@ header {
   }
 }
 
+.socialmedia,
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20.375rem);
+  grid-template-rows: auto;
+  justify-content: center;
+  width: 100%;
+}
+@media (min-width: 37.5rem) {
+  .socialmedia,
+.stats {
+    grid-template-columns: repeat(auto-fit, 15.9375rem);
+  }
+}
+
 .socialmedia {
   margin-top: -2.5rem;
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 37.5rem) {
   .socialmedia {
-    display: grid;
     grid-gap: 1.875rem;
-    grid-template-columns: repeat(auto-fit, 255px);
-    grid-template-rows: auto;
-    justify-content: center;
     margin-top: -6.75rem;
-    width: 100%;
   }
 }
 
@@ -412,12 +423,8 @@ header {
 }
 @media (min-width: 37.5rem) {
   .stats {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit, 255px);
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 30px;
+    column-gap: 1.875rem;
+    row-gap: 1.875rem;
   }
 }
 @media (min-width: 69.375rem) {
